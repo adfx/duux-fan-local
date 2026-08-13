@@ -6,9 +6,11 @@
 
 #################### Forked from LouisR-git/duux-fan-local #################
 #
+# All Credits go to LouisR-git/duux-fan-local
+#
 # I own a de-humidifier and will create/test/run a custom profile 
 #
-# Later ask for a pull request
+# Later ask for a pull request LouisR-git/duux-fan-local
 #
 ############################################################################
 
