@@ -4,6 +4,15 @@
 [![pre-commit][pre-commit-shield]][pre-commit]
 [![Black][black-shield]][black]
 
+#################### Forked from LouisR-git/duux-fan-local #################
+#
+# I own a de-humidifier and will create/test/run a custom profile 
+#
+# Later ask for a pull request
+#
+############################################################################
+
+
 # 🌀 Duux Local - Home Assistant Integration
 
 **Take back control of your Duux smart devices - locally, privately, and cloud-free.**
