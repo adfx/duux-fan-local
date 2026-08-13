@@ -119,6 +119,16 @@ DEVICE_PROFILE_SCHEMA = vol.Schema(
                 )
             }
         ),
+        vol.Optional("humidifier"): vol.Schema(
+            {
+                vol.Optional("power_key"): str,
+                vol.Optional("target_humidity_key"): str,
+                vol.Optional("current_humidity_key"): str,
+                vol.Optional("min_humidity"): vol.Any(int, float),
+                vol.Optional("max_humidity"): vol.Any(int, float),
+                vol.Optional("humidity_step"): vol.Any(int, float),
+            }
+        ),        
     }
 )
 
@@ -146,7 +156,16 @@ DEVICE_PROFILES = {
                 "entity_category": None,
             },
         },
-
+            
+        "humidifier": {
+            "power_key": ATTR_POWER,
+            "target_humidity_key": ATTR_SETPOINT,
+            "current_humidity_key": ATTR_HUMIDITY,
+            "min_humidity": 30,
+            "max_humidity": 80,
+            "humidity_step": 5,
+        },
+            
         "sensors": {
             "humidity": {
                 "name": "Humidity",
