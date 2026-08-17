@@ -88,7 +88,8 @@ class DuuxBinarySensor(BinarySensorEntity):
         state_key = self._details.get("state_key")
         val = fan_data.get(state_key)
         if val is not None:
-            self._attr_is_on = val == 1
+            on_value = self._details.get("on_value", 1)
+            self._attr_is_on = val == on_value
             self.async_write_ha_state()
 
     async def async_added_to_hass(self) -> None:
