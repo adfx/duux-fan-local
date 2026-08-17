@@ -207,6 +207,7 @@ DEVICE_PROFILES = {
             "water_tank_full": {
                 "name": "Water Tank Full",
                 "state_key": ATTR_ERROR,
+                "on_value": 8,
                 "device_class": "problem",
                 "icon": "mdi:cup-water",
             },
