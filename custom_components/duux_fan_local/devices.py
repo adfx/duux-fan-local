@@ -115,6 +115,7 @@ DEVICE_PROFILE_SCHEMA = vol.Schema(
                         vol.Required("state_key"): str,
                         vol.Optional("device_class"): vol.Any(str, None),
                         vol.Optional("icon"): vol.Any(str, None),
+                        vol.Optional("on_value"): int,
                     }
                 )
             }
